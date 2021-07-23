@@ -1,0 +1,35 @@
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #f8d030;
+  --color: #111111;
+  --font-title: 'DM Sans', sans-serif;
+  --font-text: 'Poppins', sans-serif;
+}
+
+.btn {
+  width: 100px;
+  height: auto;
+  background-color: var(--color);
+  color: var(--bg-color);
+  border-radius: 10px;
+  font-family: var(--font-text);
+}
+
+.btn-div {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.forms,
+label,
+input {
+  font-family: var(--font-text);
+  color: #140c12;
+  font-size: 16px;
+}

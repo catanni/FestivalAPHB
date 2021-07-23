@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+			<!--Page Info-->
+			<meta charset="UTF-8">
+			<meta name="autor" content="Bianca Catani">
+			<meta name="palavraschaves" content="html5, wedd1">
+			<meta name="gerador" content="NotePad++">
+			<title>A previsão pra hoje é briga</title>
+			<!--Icon-->
+			<link rel="shortcut icon" href="../imagem/favicon.ico">
+			<!--Styles-->
+			<link rel="stylesheet" type="text/css" href="../css/style.css">
+			<link rel="stylesheet" type="text/css" href="../css/menu.css">
+			<link rel="stylesheet" type="text/css" href="../css/form.css">
+			<!--Fonts-->
+			<link rel="preconnect" href="https://fonts.gstatic.com" />
+			<link
+				href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+				rel="stylesheet"
+			/>
+			<!--Script-->
+		<script src="../app/app.js"></script>
+	</head>
+	<a id="Inicio"></a>
+	<body>
+		<header>
+			
+			<!--Logo-->
+			<div class="logo">	
+				<p>AP</p>
+				<p>HB</p>
+			</div>
+
+			<!--Menu-->
+			<nav class="menu">
+				<ul class="menu-list">
+					<li><a href="../index.html">Página Inicial</a></li>
+					<li><a href="../paginas/Sobre.html">Sobre</a></li>
+					<li><a href="#">Edições
+						<ul class="sub-menu">
+								<li><a  href="../paginas/PrimeiraEdicao.html">Primeira Edição</a></li>
+								<li><a  href="../paginas/SegundaEdicao.html">Segunda Edição</a></li>
+								<li><a  href="../paginas/TerceiraEdicao.html">Terceira Edição</a></li>
+								<li><a  href="../paginas/QuartaEdicao.html">Quarta Edição</a></li>
+						</ul></li>
+					<li><a href="#">Participantes
+						<ul class="sub-menu">
+							<li><a  href="../paginas/Bianca.html">Bianca</a></li>
+							<li><a  href="../paginas/Gusta.html">Gustavo</a></li>
+							<li><a  href="../paginas/Leo.html">Leonardo</a></li>
+							<li><a  href="../paginas/Tici.html">Ticianni</a></li>
+							<li><a  href="../paginas/Vitoria.html">Vitória</a></li>
+						</ul>
+					</li>
+					<li><a href="../paginas/contatos.html" target="_blank">Formulário</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!--Formulário-->
+		<section>
+			<form action="../paginas/contatos.html" method="post" class="forms" name='formulario'>
+				<h1 class="title">Formulário</h1>
+				<p>Deixe aqui a suas indicações para o Festival. Lembre-se de priorizar filmes que sejam inéditos à maioria dos participantes.</p><br>
+				<label for="indicacaoUm">Primeira Indicação:</label>
+				<input type="text" id="indicacaoUm" name="indicacaoUm"><br><br>
+				<label for="indicacaoDois">Segunda Indicação:</label>
+				<input type="text" id="indicacaoDois" name="indicacaoDois"><br><br>
+				<p>Para garantir o anonimato, os participantes vão ser chamados pelo código gerado abaixo. Se for necessário, por favor entrar em contato por eventuais problemáticas.</p><br>
+				<label for="cor">Cor:</label>
+				<input type="text" id="cor" name="cor"><br><br>
+				<label for="num" >Número de 1 a 50</label>
+				<input type="number" min="1" max="50"	 value="" id="num" name="num"><br><br>
+				<p>Você já participou de alguma das edições anteriores do Festival?</p>
+				<input type="radio" id="yes" name="yes" value="yes">
+				<label for="yes">Sim</label><br>
+				<input type="radio" id="no" name="no" value="no">
+				<label for="no">Não</label><br>
+				<button type="submit" value="Enviar" class="btn" onclick="validar()">Enviar</button>
+				<button type="reset" value="Limpar"class='btn'>Limpar</button><br><br>
+				</div>
+			</form>
+		</section>
+
+		<!--Footer-->
+		<footer>
+			<p> Direito exclusivo da autora Bianca, 2021</p>
+			<a href="#Inicio">Início da Página</a>	
+		</footer>
+	</body>
+</html>

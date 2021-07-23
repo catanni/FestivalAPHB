@@ -1,0 +1,84 @@
+*,
+*.after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+:root {
+  --bg-color: #f8d030;
+  --color: #111111;
+  --font-title: 'DM Sans', sans-serif;
+  --font-text: 'Poppins', sans-serif;
+  --grad-menu: #111111, #292929;
+}
+
+.menu {
+  border: 1px solid #f8d030;
+}
+
+.menu .menu-list,
+.menu .sub-menu {
+  list-style: none;
+}
+
+.menu a {
+  color: var(--bg-color);
+  background: var(--color);
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  font-family: var(--font-title);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+}
+
+.menu > .menu-list > li {
+  float: left;
+  position: relative;
+}
+
+.menu > .menu-list > li > a {
+  padding: 15px;
+  margin: 0 5px;
+  color: var(--bg-color);
+  background: var(--color);
+}
+
+.menu > .menu-list > li:hover a {
+  background: var(--color);
+}
+
+.menu > .menu-list > li:hover > .sub-menu {
+  display: block;
+}
+
+.menu > .menu-list > li > .sub-menu {
+  position: absolute;
+  top: 50px;
+  left: 5px;
+  background: var(--color);
+  min-height: 20px;
+  z-index: 1000;
+  display: none;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.menu > .menu-list > li > .sub-menu > li > a {
+  padding: 5px 10px;
+  background: linear-gradient(var(--grad-menu));
+  border-radius: 10px;
+}
+
+.menu :after {
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
